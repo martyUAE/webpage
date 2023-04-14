@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Treehotel</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="Footer.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+          <a href="kambayashi_mainpage.html"><img src="logo.png" alt="logo">Treehotel</a>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+        <ul class="menu">
+          <li><a href="kambayashi_ex4page1.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="kambayashi_ex4page2.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="biosphere.html">Biosphere</a>
+              <a href="mirrorcube.html">Mirrorcube</a>
+              <a href="birdnest.html">Bird's Nest</a>
+              <a href="thecabin.html">The Cabin</a>
+              <a href="7throom.html">7th Room</a>
+              <a href="theufo.html">The UFO</a>
+              <a href="dragonfly.html">Dragonfly</a>
+              <a href="bluecone.html">Blue Cone</a>
+            </div>
+          </li>
+          <li><a href="kambayashi_ex4page3.html">Gallery</a></li>
+          <li><a href="kambayashi_ex4page4.html">Testimonials</a></li>
+          <li><a href="kambayashi_ex4page5.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<section>
+<!-- Jquery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Toggle Menu Functionality -->
+<script>
+$(function(){
+  $(".toggle").on("click", function(){
+    if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+    } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+    }
+  });
+});
+</script>
+
+
+<main>
+<br />
+<br />
+<br />
+<h2>About Us:</h2>
+<br />
+<br />
+<br />
+<p>Welcome to Treehotel - a place where you can experience nature in a unique way! We are a family-owned business founded in 2010 by Kent and Britta Lindvall, and since 2022 the hotel is owned by Jonas Olsson and Hannah Wennebro Olsson. Our vision is to deliver a magical experience in a unique environment through passionate, top-class hosting. We promise to constantly strive to develop and innovate our place to create curiosity for your next meeting.</p>
+<br />
+<br />
+<p>Our business is based in Harads, a small village located in the Norrland forest. We offer a range of accommodation options, including tree rooms and ground level rooms, all designed by different architects with a unique and modern touch. Each room is equipped with modern amenities such as heating, electricity, shower and toilet, while integrating nature in a discreet and beautiful way.</p>
+<br />
+<br />
+<p>At Treehotel you can relax and enjoy nature at your own pace. You can take a walk along the Lule river, canoe, fish or explore the forest on foot or by bike. We also offer guided tours and activities, including magical Northern Lights tours, treehouse walks and tastings of local produce.</p>
+<br />
+<br />
+<p>We are proud to run a business with sustainability in focus. We work hard to reduce our environmental impact. We also use local ingredients and work with local producers to support the local economy.</p>
+<br />
+<br />
+<p>We hope you will enjoy your stay at Treehotel and experience the fantastic Swedish forest in a unique and memorable way!</p>
+<br />
+<br />
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

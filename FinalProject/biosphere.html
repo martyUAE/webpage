@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biosphere</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="Footer.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+          <a href="kambayashi_mainpage.html"><img src="logo.png" alt="logo">Treehotel</a>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+        <ul class="menu">
+          <li><a href="kambayashi_ex4page1.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="kambayashi_ex4page2.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="biosphere.html">Biosphere</a>
+              <a href="mirrorcube.html">Mirrorcube</a>
+              <a href="birdnest.html">Bird's Nest</a>
+              <a href="thecabin.html">The Cabin</a>
+              <a href="7throom.html">7th Room</a>
+              <a href="theufo.html">The UFO</a>
+              <a href="dragonfly.html">Dragonfly</a>
+              <a href="bluecone.html">Blue Cone</a>
+            </div>
+          </li>
+          <li><a href="kambayashi_ex4page3.html">Gallery</a></li>
+          <li><a href="kambayashi_ex4page4.html">Testimonials</a></li>
+          <li><a href="kambayashi_ex4page5.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<section>
+<!-- Jquery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Toggle Menu Functionality -->
+<script>
+$(function(){
+  $(".toggle").on("click", function(){
+    if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+    } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+    }
+  });
+});
+</script>
+
+
+<main>
+<br />
+<br />
+<h2>Biosphere:</h2>
+<br />
+<center>
+  <div class="animated">
+  <img src="bio.gif" alt="biosphere" style="width:100%">
+  </div>
+  </center>
+<br />
+
+<p>Biosphere amplifies Treehotel's focus on sustainability and natural tourism, helping facilitate the conservation of the local bird population. With a façade containing 350 bird nests, Treehotel aims to decrease the downward spiral of the bird population in the Swedish woods and instead strengthen the biosphere and natural habitat.</p>
+<br />
+<p>The interior is simple and pragmatic, yet due to its checker solid-open conceptual make-up, allows for a range of experiences within a relatively small space. Visitors will during our snow free months have access to a roof terrace - close to the treetop canopies - that offer a 360-degree views of the forest.</p>
+<br />
+<p>Through wrapping the new hotel room in an ecological habitat, guests are provided the opportunity to experience birdlife in close proximity, finding themselves in the epicenter of nature.</p>
+<br />
+<p>Biosphere is accessed via a suspended bridge that slopes from the ground to the top of the trees. The interior of the 34m2 hotel room incorporates rich dark interiors and organic materials inspired by the surrounding landscape, which further serve to reinforce the visitors' view outwards and to focus on the natural beauty of the surroundings.</p>
+<br />
+<p>As all of the Treehotel tree rooms Biosphere has incinerating toilet and our sustainable Rukkamoinika water system with 3 litres of water for washing your hands.</p>
+<br />
+<p>Biosphere also has an eco shower, sauna and tap water. <br /><br /> Access to the sleep loft by ladder. <br /><br /> Biosphere was designed by the Danish Bjarke Ingels Group, BIG. <br /><br /> </p>
+<!-- Image Gallery -->
+<section>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex
+</script>
+<center>
+  <div class="gallery">
+    <img src="biosphere1.jpg" alt="Image 1" onclick="openModal();currentSlide(1)">
+    <img src="biosphere2.jpg" alt="Image 2" onclick="openModal();currentSlide(2)">
+    <img src="biosphere3.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+    <img src="biosphere4.jpg" alt="Image 4" onclick="openModal();currentSlide(4)">
+  </div>
+  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img src="biosphere1.jpg" alt="Image 1">
+      </div>
+      <div class="mySlides">
+        <img src="biosphere2.jpg" alt="Image 2">
+      </div>
+      <div class="mySlides">
+        <img src="biosphere3.jpg" alt="Image 3">
+      </div>
+      <div class="mySlides">
+        <img src="biosphere4.jpg" alt="Image 4">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+</center>
+</section>
+<br />
+  <center>
+    <a href="https://online.bookvisit.com/accommodation/list?channelId=b3638db5-a645-4b75-aaef-c03addb09eec"><button>Book Now!</button></a>
+  </center>
+</main>
+<br />
+<br />
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Treehotel</h4>
+              <ul>
+                <li><a href="kambayashi_mainpage.html">main page</a></li>
+                <li><a href="kambayashi_ex4page1.html">about us</a></li>
+                <li><a href="kambayashi_ex4page2.html">our services</a></li>
+                <li><a href="kambayashi_ex4page3.html">gallery</a></li>
+                <li><a href="kambayashi_ex4page4.html">testimonials</a></li>
+                <li><a href="kambayashi_ex4page5.html">contact us</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Hotels</h4>
+              <ul>
+                <li><a href="biosphere.html">biosphere</a></li>
+                <li><a href="mirrorcube.html">mirrorcube</a></li>
+                <li><a href="birdnest.html">bird's nest</a></li>
+                <li><a href="thecabin.html">the cabin</a></li>
+                <li><a href="7throom.html">the 7th room</a></li>
+                <li><a href="theufo.html">the Ufo</a></li>
+                <li><a href="dragonfly.html">dragonfly</a></li>
+                <li><a href="bluecone.html">the blue cone</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Website</h4>
+              <ul>
+                <li><a href="https://treehotel.se/en/">Treehotel</a></li>
+                <li><a href="https://online.bookvisit.com/accommodation/list?channelId=b3638db5-a645-4b75-aaef-c03addb09eec">Booking</a></li>
+                <li><a href="https://treehotel.se/en/how-to-get-there">Travel</a></li>
+                <li><a href="https://treehotel.se/en/activities">Activities</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100064688980916"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/treehotel?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/explore/tags/treehotel/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCuPYiIruyw6cCXelVKW4Jvw"><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>

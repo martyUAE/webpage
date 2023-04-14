@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mirrorcube</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="Footer.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+          <a href="kambayashi_mainpage.html"><img src="logo.png" alt="logo">Treehotel</a>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+        <ul class="menu">
+          <li><a href="kambayashi_ex4page1.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="kambayashi_ex4page2.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="biosphere.html">Biosphere</a>
+              <a href="mirrorcube.html">Mirrorcube</a>
+              <a href="birdnest.html">Bird's Nest</a>
+              <a href="thecabin.html">The Cabin</a>
+              <a href="7throom.html">7th Room</a>
+              <a href="theufo.html">The UFO</a>
+              <a href="dragonfly.html">Dragonfly</a>
+              <a href="bluecone.html">Blue Cone</a>
+            </div>
+          </li>
+          <li><a href="kambayashi_ex4page3.html">Gallery</a></li>
+          <li><a href="kambayashi_ex4page4.html">Testimonials</a></li>
+          <li><a href="kambayashi_ex4page5.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<section>
+<!-- Jquery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Toggle Menu Functionality -->
+<script>
+$(function(){
+  $(".toggle").on("click", function(){
+    if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+    } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+    }
+  });
+});
+</script>
+
+<main>
+  <br />
+  <br />
+  <h2>Mirrorcube</h2>
+  <br />
+  <center>
+    <div class="animated">
+    <img src="mirror.gif" alt="mirrorcube" style="width:100%">
+    </div>
+    </center>
+  <br />
+  
+  <p>The Mirrorcube is a truly different tree room, a cube measuring 4x4x4 metres. The room is surrounded by mirror walls which both reflect and blend in with the surroundings. A tree trunk grows through the room and is enclosed by an aluminium frame, which forms the base of the room. All walls are covered in mirror glass.</p>
+  <br />
+  <p>On the outside, this gives the illusion that the room is glass from floor to ceiling. However, on the inside, the walls are light plywood, with windows on three of them as well as on the ceiling. Which is a good thing, because on dark nights when the lights are on, you can actually sense that there is someone moving behind the pieces of mirror glass that are not covered by walls.</p>
+  <br />
+  <p>Another exciting detail hidden behind the mirror facade is a balcony that allows you to go outside the box without being seen.</p>
+  <br />
+  <p>The Mirrorcube provides excellent accommodation for two guests. Here, you will find a double bed, a toilet and seating where you can socialise. </p>
+  <br />
+  <p>The Mirrorcube room was designed by Bolle Tham and Martin Videgård and built by a local Harads company.</p>
+  <br />
+  <!-- Image Gallery -->
+  <section>
+  
+  <script>
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex
+  </script>
+  <center>
+    <div class="gallery">
+      <img src="mirrorcube1.jpg" alt="Chairs" onclick="openModal();currentSlide(1)">
+      <img src="mirrorcube2.jpg" alt="Bedroom" onclick="openModal();currentSlide(2)">
+      <img src="mirrorcube3.jpg" alt="Outside View" onclick="openModal();currentSlide(3)">
+      <img src="mirrorcube4.jpg" alt="Outside View 2" onclick="openModal();currentSlide(4)">
+    </div>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="mirrorcube1.jpg" alt="Chairs">
+        </div>
+        <div class="mySlides">
+          <img src="mirrorcube2.jpg" alt="Bedroom">
+        </div>
+        <div class="mySlides">
+          <img src="mirrorcube3.jpg" alt="Outside View">
+        </div>
+        <div class="mySlides">
+          <img src="mirrorcube4.jpg" alt="Outside View 2">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+  </center>
+  </section>
+  <br />
+  <center>
+    <a href="https://online.bookvisit.com/accommodation/list?channelId=b3638db5-a645-4b75-aaef-c03addb09eec"><button>Book Now!</button></a>
+  </center>
+  </main>
+<br />
+<br />
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Treehotel</h4>
+              <ul>
+                <li><a href="kambayashi_mainpage.html">main page</a></li>
+                  <li><a href="kambayashi_ex4page1.html">about us</a></li>
+                  <li><a href="kambayashi_ex4page2.html">our services</a></li>
+                  <li><a href="kambayashi_ex4page3.html">gallery</a></li>
+                  <li><a href="kambayashi_ex4page4.html">testimonials</a></li>
+                  <li><a href="kambayashi_ex4page5.html">contact us</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>hotels</h4>
+              <ul>
+                <li><a href="biosphere.html">biosphere</a></li>
+                <li><a href="mirrorcube.html">mirrorcube</a></li>
+                <li><a href="birdnest.html">bird's nest</a></li>
+                <li><a href="thecabin.html">the cabin</a></li>
+                <li><a href="7throom.html">the 7th room</a></li>
+                <li><a href="theufo.html">the Ufo</a></li>
+                <li><a href="dragonfly.html">dragonfly</a></li>
+                <li><a href="bluecone.html">the blue cone</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>website</h4>
+              <ul>
+                <li><a href="https://treehotel.se/en/">Treehotel</a></li>
+                <li><a href="https://online.bookvisit.com/accommodation/list?channelId=b3638db5-a645-4b75-aaef-c03addb09eec">Booking</a></li>
+                <li><a href="https://treehotel.se/en/how-to-get-there">Travel</a></li>
+                <li><a href="https://treehotel.se/en/activities">Activities</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100064688980916"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/treehotel?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/explore/tags/treehotel/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCuPYiIruyw6cCXelVKW4Jvw"><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>

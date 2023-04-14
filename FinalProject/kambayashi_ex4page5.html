@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="Footer.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+          <a href="kambayashi_mainpage.html"><img src="logo.png" alt="logo">Treehotel</a>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+        <ul class="menu">
+          <li><a href="kambayashi_ex4page1.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="kambayashi_ex4page2.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="biosphere.html">Biosphere</a>
+              <a href="mirrorcube.html">Mirrorcube</a>
+              <a href="birdnest.html">Bird's Nest</a>
+              <a href="thecabin.html">The Cabin</a>
+              <a href="7throom.html">7th Room</a>
+              <a href="theufo.html">The UFO</a>
+              <a href="dragonfly.html">Dragonfly</a>
+              <a href="bluecone.html">Blue Cone</a>
+            </div>
+          </li>
+          <li><a href="kambayashi_ex4page3.html">Gallery</a></li>
+          <li><a href="kambayashi_ex4page4.html">Testimonials</a></li>
+          <li><a href="kambayashi_ex4page5.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<section>
+<!-- Jquery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Toggle Menu Functionality -->
+<script>
+$(function(){
+  $(".toggle").on("click", function(){
+    if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+    } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+    }
+  });
+});
+</script>
+<br />
+<br />
+<main>
+<div class="center">
+<br />
+  <center>
+ 
+    <a href="#"><button>How to Contact Us?</button></a></li>
+   
+   </center>
+<br />
+<center>
+<div class="table-container">
+  <table>
+    <tr>
+      <th>Contact</th>
+      <th>Place</th>
+      <th>Payment</th>
+    </tr>
+    <tr>
+      <td>Treehotel</td>
+      <td>Sweden</td>
+      <td>Card</td>
+    </tr>
+    <tr>
+      <td>booking@treehotel.se</td>
+      <td>Edeforsväg 2 A</td>
+      <td>Bank</td>
+    </tr>
+    <tr>
+      <td>+46 (0)928-103 00</td>
+      <td>961 78 Harads</td>
+      <td>No Cash</td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>Check-in</th>
+      <th>Check-out</th>
+      <th>Rules</th>
+    </tr>
+    <tr>
+      <td>4:00 PM</td>
+      <td>11:00 AM</td>
+      <td>No Pets</td>
+    </tr>
+    <tr>
+      <td>10:00 PM</td>
+      <td>8:00 AM</td>
+      <td>18+ for check-in</td>
+    </tr>
+    <tr>
+      <td>Downtime</td>
+      <td>Downtime</td>
+      <td>13+ (Adult) </td>
+    </tr>
+  </table>
+</div>
+</center>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1617.7539600456857!2d20.963497776916405!3d66.07938035367042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d604c9f5a53ad5%3A0x3ee38c7d61f9af23!2sEdeforsv%C3%A4gen%202%2C%20960%2024%20Harads%2C%20Sweden!5e0!3m2!1sen!2sae!4v1681335850022!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="others" name="gender" value="others">
+  <label for="others">Others</label><br>
+
+  <label for="subject">Subject:</label>
+  <select id="subject" name="subject" required>
+    <option value="">--Please choose an option--</option>
+    <option value="customer-service">Customer Service</option>
+    <option value="technical-support">Technical Support</option>
+    <option value="billing">Billing</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <input type="reset" value="Reset">
+  <br />
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+</main>
+<br />
+<br />
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Treehotel</h4>
+              <ul>
+                <li><a href="kambayashi_mainpage.html">main page</a></li>
+                <li><a href="kambayashi_ex4page1.html">about us</a></li>
+                <li><a href="kambayashi_ex4page2.html">our services</a></li>
+                <li><a href="kambayashi_ex4page3.html">gallery</a></li>
+                <li><a href="kambayashi_ex4page4.html">testimonials</a></li>
+                <li><a href="kambayashi_ex4page5.html">contact us</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>hotels</h4>
+              <ul>
+                <li><a href="biosphere.html">biosphere</a></li>
+                <li><a href="mirrorcube.html">mirrorcube</a></li>
+                <li><a href="birdnest.html">bird's nest</a></li>
+                <li><a href="thecabin.html">the cabin</a></li>
+                <li><a href="7throom.html">the 7th room</a></li>
+                <li><a href="theufo.html">the Ufo</a></li>
+                <li><a href="dragonfly.html">dragonfly</a></li>
+                <li><a href="bluecone.html">the blue cone</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>website</h4>
+              <ul>
+                <li><a href="https://treehotel.se/en/">Treehotel</a></li>
+                <li><a href="https://online.bookvisit.com/accommodation/list?channelId=b3638db5-a645-4b75-aaef-c03addb09eec">Booking</a></li>
+                <li><a href="https://treehotel.se/en/how-to-get-there">Travel</a></li>
+                <li><a href="https://treehotel.se/en/activities">Activities</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100064688980916"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/treehotel?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/explore/tags/treehotel/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCuPYiIruyw6cCXelVKW4Jvw"><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>

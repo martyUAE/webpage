@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mainpage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="Footer.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+          <a href="kambayashi_mainpage.html"><img src="logo.png" alt="logo">Treehotel</a>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+        <ul class="menu">
+          <li><a href="kambayashi_ex4page1.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="kambayashi_ex4page2.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="biosphere.html">Biosphere</a>
+              <a href="mirrorcube.html">Mirrorcube</a>
+              <a href="birdnest.html">Bird's Nest</a>
+              <a href="thecabin.html">The Cabin</a>
+              <a href="7throom.html">7th Room</a>
+              <a href="theufo.html">The UFO</a>
+              <a href="dragonfly.html">Dragonfly</a>
+              <a href="bluecone.html">Blue Cone</a>
+            </div>
+          </li>
+          <li><a href="kambayashi_ex4page3.html">Gallery</a></li>
+          <li><a href="kambayashi_ex4page4.html">Testimonials</a></li>
+          <li><a href="kambayashi_ex4page5.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<!-- Jquery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Toggle Menu Functionality -->
+<script>
+$(function(){
+  $(".toggle").on("click", function(){
+    if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+    } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+    }
+  });
+});
+</script>
+
+<!-- Main Page -->
+<main>
+<br />
+<br />
+<br />
+<div>
+<h2>Welcome to the landscape hotel where nature and imagination run wild</h2>
+<br />
+<br />
+<p>Even though you might be a world away from home, at the Treehotel we welcome you like family. Let us take you away from the stresses and demands of everyday life. At Treehotel nature, ecological values, comfort and modern design are combined for an exciting adventure.</p> <br />
+<p>Gaze out at Sweden’s spectacular nature from our separate, unique and secluded and comfortable rooms in the trees. From September to March you have the chance to watch the Northern Lights illuminate the sky above you. Summertime we have daylight all night long.</p> <br />
+<p>Whether you’re looking for an adventure, a relaxing break or simply to wind down in nature, Treehotel invites you to experience nature, and our restaurant and surroundings, in the most unique and memorable way you can imagine.</p> <br />
+<br />
+<br />
+</div>
+
+
+<!-- Image Maps -->
+<div class="container clearfix">
+<div class="hotelimages">
+<img src="biosphere.png" alt="biosphere" width="717" height="300" usemap="#biosphere">
+  <map name="biosphere">
+  <area shape="rect" coords="0,0,717,300" alt="biosphere" href="biosphere.html">
+  </map>
+<img src="mirrorcube.png" alt="mirrorcube" width="356" height="300" usemap="#mirrorcube">
+  <map name="mirrorcube">
+  <area shape="rect" coords="0,0,356,300" alt="mirrorcube" href="mirrorcube.html">
+  </map>
+<img src="birdnest.png" alt="bird nest" width="356" height="300" usemap="#birdnest" >
+  <map name="birdnest">
+  <area shape="rect" coords="0,0,356,300" alt="birdnest" href="birdnest.html">
+  </map>
+<img src="thecabin.png" alt="the cabin" width="356" height="300" usemap="#thecabin">
+  <map name="thecabin">
+  <area shape="rect" coords="0,0,356,300" alt="thecabin" href="thecabin.html">
+  </map>
+<img src="7throom.png" alt="7th room" width="356" height="300" usemap="#7throom">
+  <map name="7throom">
+  <area shape="rect" coords="0,0,356,300" alt="7throom" href="7throom.html">
+  </map>
+<img src="theufo.png" alt="the ufo" width="356" height="300" usemap="#theufo">
+  <map name="theufo">
+  <area shape="rect" coords="0,0,356,300" alt="theufo" href="theufo.html">
+  </map>
+<img src="dragonfly.png" alt="dragonfly" width="356" height="300" usemap="#dragonfly">
+  <map name="dragonfly">
+  <area shape="rect" coords="0,0,356,300" alt="dragonfly" href="dragonfly.html">
+  </map>
+<img src="bluecone.png" alt="blue cone" width="356" height="300" usemap="#bluecone">
+  <map name="bluecone">
+  <area shape="rect" coords="0,0,356,300" alt="mirrorcube" href="bluecone.html">
+  </map>
+</div>
+</div>
+</main>
+<br />
+<br />
+<br />
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Treehotel</h4>
+                    <ul>
+                        <li><a href="kambayashi_mainpage.html">main page</a></li>
+                        <li><a href="kambayashi_ex4page1.html">about us</a></li>
+                        <li><a href="kambayashi_ex4page2.html">our services</a></li>
+                        <li><a href="kambayashi_ex4page3.html">gallery</a></li>
+                        <li><a href="kambayashi_ex4page4.html">testimonials</a></li>
+                        <li><a href="kambayashi_ex4page5.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hotels</h4>
+                    <ul>
+                      <li><a href="biosphere.html">biosphere</a></li>
+                      <li><a href="mirrorcube.html">mirrorcube</a></li>
+                      <li><a href="birdnest.html">bird's nest</a></li>
+                      <li><a href="thecabin.html">the cabin</a></li>
+                      <li><a href="7throom.html">the 7th room</a></li>
+                      <li><a href="theufo.html">the Ufo</a></li>
+                      <li><a href="dragonfly.html">dragonfly</a></li>
+                      <li><a href="bluecone.html">the blue cone</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Website</h4>
+                    <ul>
+                        <li><a href="https://treehotel.se/en/">Treehotel</a></li>
+                        <li><a href="https://online.bookvisit.com/accommodation/list?channelId=b3638db5-a645-4b75-aaef-c03addb09eec">Booking</a></li>
+                        <li><a href="https://treehotel.se/en/how-to-get-there">Travel</a></li>
+                        <li><a href="https://treehotel.se/en/activities">Activities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100064688980916"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://twitter.com/treehotel?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.instagram.com/explore/tags/treehotel/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.youtube.com/channel/UCuPYiIruyw6cCXelVKW4Jvw"><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>
